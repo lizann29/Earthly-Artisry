@@ -28,7 +28,7 @@
 }
 
 .nav-a:hover {
-  color: #D5906E;
+  color: #e58f61;
 }
 .active {
   color: #d5906e;
@@ -201,6 +201,9 @@
     gap: 30px;
   }
 
+  .each-photo img{
+    width: 100%;
+  }
 .sec3-slide, .each-photo {
  background-color: #ffffff;
  padding: 10px;
@@ -233,12 +236,42 @@
     padding: 6px 19px;
     
 }
+.add-button:hover{
+  background-color: #892a15;
+}
 .sec3-slide:hover .add-button {
     background-color: #892a15;
   } 
+  .buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .pagination-button {
+    display: flex;
+    width: 56px;
+    padding: 17px 18px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFF;
+    color: #FFF;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-button:hover {
+    background-color: #B53B1B;
+  }
+  
+  .pagination-button.active {
+    background-color: #B53B1B;
+    color: #FFF;
+  }
+  
 
-
-  /* section 4 */
 /* Section 4 */
 .sec4-wrapper {
     position: relative;
@@ -264,8 +297,20 @@
     font-size: 48px;
     font-weight: 700;
     color: #ffffff;
-    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5)
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards; 
   }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .input-container {
     display: flex;
   }
@@ -350,9 +395,247 @@ height: auto;
     color: white;
     font-size: 36px;
     font-family: 'Inter', sans-serif;
-    margin-bottom: 16px; /* Add 16px margin at the bottom */
+    margin-bottom: 16px; 
   }
-  
+
   .footer-logo span {
     color: #d5906e;
   }
+
+  .footer-socials a:hover img {
+    opacity: 0.8; 
+    transition: opacity 0.3s ease-in-out;
+  }
+
+
+  /* Artwork css */
+  .cover-wrapper {
+    padding-top: 96px;
+    position: relative;
+    background-image: url("../images/cover3.png");
+    background-size: cover;
+    background-position: center;
+    height: 562px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cover-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+  }
+  
+  .cover-info-wrapper h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .input-container {
+    display: flex;
+  }
+  
+  .input-container {
+    display: flex;
+    border: solid 2px white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .email-input {
+    border: none;
+    width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .email-input::placeholder {
+    color: #D5906E;
+  }
+  
+  .email-input:focus {
+    outline: none;
+  }
+  
+  .search-button {
+    width: 150px;
+    background-color: #B53B1B;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  /* Second section */
+  
+  .slide-section {
+    background-color: #EA904F;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 120px;
+  }
+  
+  .texts-before-slide {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  
+  .texts-before-slide h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .sort-button {
+    height: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 160px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #402101;
+    border: 2px solid #B53B1B;
+    background-color: #ffffff;
+    margin-left: auto; 
+  }
+  
+  .photos-here {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+  }
+  
+  .each-photo {
+    flex: 1 1 20%;
+    box-sizing: border-box;
+  }
+
+  /* Contact css */
+  .contact-cover {
+    position: relative;
+    background-image: url("../images/cover4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 720px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-wrapper {
+    position: absolute;
+    top: 160px;
+    left: 222px;
+    /* width: 500px; */
+    /* height: 400px; */
+    padding: 24px 30px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: rgba(64, 33, 1, 0.90);
+    box-shadow: -1px -1px 4px 0px #FFF;
+  }
+  
+  .form-wrapper h2 {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .name-email {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 36px;
+  }
+  
+  .form-wrapper input {
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    align-items: flex-start;
+    /* align-items: center; */
+    padding: 10px;
+    background-color: transparent;
+  }
+  
+  .form-wrapper input[name="message"] {
+    width: 440px;
+    height: 96px;
+    margin-bottom: 16px;
+  }
+  .submit-button{
+    border-radius: 10px;
+    background: #FF543E;
+    font-family: 'Inter', sans-serif;
+    padding: 19px 42px;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+  }
+/* contact section */
+.contact-section{
+  background: #EA904F;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section h2{
+  color: #FFF;
+  text-shadow: 0px 4px 4px #000;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 60px;
+
+}
+.map-and-icons {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.map-and-icons ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.map-and-icons ul li {
+  margin-bottom: 72px;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.map-and-icons li img {
+  margin-right: 10px;
+}

@@ -1,0 +1,106 @@
+@media (max-width: 510px) {
+    /* header */
+    .logo {
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
+    }
+    /* First Section  */
+    .sec1-info-wrapper {
+        gap: 32px;
+        width: 388px;
+    }
+    .sec1-text {
+        font-size: 32px;
+    }
+    /* Second sections */
+    .photo-wrapper {
+        width: 100%;
+    }
+    .text-wrapper {
+        width: 90%;
+    }
+    /* Third Section */
+    /* Fourth Section */
+    .sec4-info-wrapper h2 {
+        font-size: 32px;
+    }
+    .email-input {
+        width: 90%;
+    }
+    .footer-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /* second page */
+    .cover-info-wrapper h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: #ffffff;
+        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    }
+    .slide-section {
+        padding: 72px 24px;
+    }
+    .texts-before-slide h2 {
+        font-size: 16px;
+    }
+    .each-photo {
+        flex: 1 0 100%; 
+        max-width: 100%;
+    }
+    /* third page */
+    .form-wrapper {
+        top: 160px;
+        left: 24px;
+        width: 80%;
+    }
+    .form-wrapper h2 {
+        font-size: 32px;
+    }
+    .form-wrapper input {
+        width: 80%;
+    }
+    .form-wrapper input[name="message"] {
+        width: 99%;
+    }
+    .photos-here .each-photo:nth-last-child(-n + 4) {
+        display: none; 
+    }
+    /* contact section */
+    .contact-section {
+        padding: 64px 24px;
+    }
+    .map-and-icons ul {
+        list-style: none;
+        display: flex;
+        gap: 72px;
+        margin-bottom: 2px;
+    }
+    .map-and-icons {
+        display: flex;
+        flex-direction: column;
+    }
+    .map-and-icons iframe {
+        width: 99%;
+    }
+    .map-and-icons ul li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .map-and-icons ul li img {
+        width: 48px;
+        height: 48px;
+    }
+    .map-and-icons ul li span {
+        display: none;
+    }
+    .contact-section h2 {
+        margin-bottom: 60px;
+    }
+  }
+  
