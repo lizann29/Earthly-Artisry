@@ -1,31 +1,33 @@
 @media (max-width: 1250px) {
-
-    .manual-slide{
-        overflow-x: scroll;
+    .index_section3 {
         padding-inline: 32px 0px;
-
     }
-    .sec3-slide{
+
+    .manual-slide {
+        overflow-x: scroll;
+    }
+
+    .sec3-slide {
         flex: 1 0 282px;
     }
-    .sec3-wrapper{
-        padding-inline: 32px 0px;
-    }
+
 }
 
 @media (max-width: 1025px) {
   /* header */
-  .header-flex {
-      padding: 26px; 
-  }
+        header {
+    padding-inline: 32px;
+         }
+
   /* section 4 */
   .photos-here .each-photo:nth-last-child(-n + 3) {
       display: none; 
   }
   /* footer */
-  .footer-flex {
-      padding: 80px 32px;
-  }
+  footer {
+    padding-inline: 32px;
+}
+
   /* second page */
   .slide-section {
       padding: 120px 24px;

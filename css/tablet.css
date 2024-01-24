@@ -1,56 +1,81 @@
-
-@media (max-width: 745px) {
+@media (max-width: 970px) {
     .burger-bar {
         display: block;
     }
+
     .burger-bar.active .burger-line:nth-child(2) {
         opacity: 0;
     }
+
     .burger-bar.active .burger-line:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
+
     .burger-bar.active .burger-line:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
     .nav-ul-items {
         position: fixed;
         left: -100%;
-        top: 90px; 
+        top: 90px;
         gap: 0;
         flex-direction: column;
         background-color: #B53B1B;
         width: 60%;
-        height: 100%; 
+        height: 100%;
         justify-content: space-evenly;
         text-align: center;
         transition: 0.5s;
         padding: 50px;
     }
+
     .nav-ul-items.active {
         left: 0;
     }
+
     /* header */
     .logo {
         font-size: 36px;
     }
+}
+
+@media (max-width: 745px) {
+    /* header */
+    header {
+        padding-inline: 24px;
+    }
+
     /* section 2  */
-    .photo-wrapper {
-        width: 100%;
+    .sec2-wrapper {
+        width: 384px;
     }
+
+    .box {
+        width: 180px;
+        height: 162px;
+    }
+
+    .text-wrapper {
+        padding: 8px;
+        width: 150px;
+    }
+
     /* Section 3 */
-    /* Section 4 */
-    .sec4-info-wrapper h2 {
-        font-size: 36px;
+    .index-section3{
+        padding-left: 24px;
     }
+    /* Section 4 */
+
     .email-input {
         width: 90%;
     }
     .photos-here .each-photo:nth-last-child(-n + 3) {
-        display: none; /
+        display: none; 
     }
     /* footer */
-    .footer-flex {
-        padding: 80px 24px;
+    footer {
+        padding-inline: 32px;
     }
     /* second page */
     .slide-section {
@@ -94,3 +119,32 @@
     }
   }
   
+  @media (max-width: 720px) {
+
+    /* section 4 index */
+    .section4 {
+        padding-inline: 20px;
+        height: 320px;
+        row-gap: 32px;
+    }
+
+    .section4 h2 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .email-input {
+        width: 90%;
+    }
+
+    /* footer */
+    footer {
+        flex-direction: column;
+        padding: 32px 0;
+        align-items: center;
+        text-align: center;
+        row-gap: 32px;
+    }
+    
+}

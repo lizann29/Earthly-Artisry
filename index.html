@@ -24,8 +24,8 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header-wrapper header-flex">
+    <div class="container">
+      <header>
         <div class="burger-bar">
           <div class="burger-line"></div>
           <div class="burger-line"></div>
@@ -34,68 +34,53 @@
 
         <nav class="nav-bar">
           <ul class="nav-ul-items">
-            <!-- Update your navigation links in HTML -->
             <li>
-              <a class="nav-a active" id="click-home" href="#index.html"
+              <a class="nav-a no-active" id="click-home" href="index.html"
                 >Home</a
               >
             </li>
             <li>
-              <a class="nav-a no-active" href="artworks.html">Artworks</a>
+              <a class="nav-a active" href="artworks.html">Artworks</a>
             </li>
             <li><a class="nav-a no-active" href="contact.html">Contact</a></li>
           </ul>
         </nav>
 
-        <div class="logo">Earthly <span>Artistry</span></div>
+        <a href="index.html" class="logo">Earthly <span>Artistry</span></a>
 
         <div class="sign-in-div">
-          <button>Sign in</button>
-          <button>
-            <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
-          </button>
+          <p>Sign in</p>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
         </div>
-      </div>
-    </header>
-    <!-- First section: EARTH WATER AIR and FIRE-->
-    <section>
-      <div class="sec1-wrapper">
-        <div class="sec1-info-wrapper">
-          <div class="sec1-text">Earth Water Air and Fire</div>
-          <button class="btn-shop-now">Shop Now</button>
-        </div>
-      </div>
-    </section>
-    <!-- Second Section: Pottery Classes -->
-    <section>
-      <div class="sec2-container sec2-wrapper">
-        <div class="photo-wrapper">
-          <div class="first-two-photos">
-            <div class="box">
-              <img src="images/photo1.png" alt="" />
-              <button class="text-wrapper">Pottery Classes</button>
-            </div>
-            <div class="box">
-              <img src="images/photo2.png" alt="" />
-              <button class="text-wrapper">Design Process</button>
-            </div>
+      </header>
+      <!-- First section: EARTH WATER AIR and FIRE-->
+      <section class="index-section1">
+        <div class="sec1-text">Earth Water Air and Fire</div>
+        <button class="btn-shop-now">Shop Now</button>
+      </section>
+      <!-- Second Section: Pottery Classes -->
+      <section class="index-section2">
+        <div class="sec2-wrapper">
+          <div class="box">
+            <img src="images/photo1.png" alt="" />
+            <button class="text-wrapper">Pottery Classes</button>
           </div>
-          <div class="second-two-photos">
-            <div class="box">
-              <img src="images/photo3.png" alt="" />
-              <button class="text-wrapper">Gift Pottery</button>
-            </div>
-            <div class="box">
-              <img src="images/photo4.png" alt="" />
-              <button class="text-wrapper">Ceramic Painting</button>
-            </div>
+          <div class="box">
+            <img src="images/photo2.png" alt="" />
+            <button class="text-wrapper">Design Process</button>
+          </div>
+          <div class="box">
+            <img src="images/photo3.png" alt="" />
+            <button class="text-wrapper">Gift Pottery</button>
+          </div>
+          <div class="box">
+            <img src="images/photo4.png" alt="" />
+            <button class="text-wrapper">Ceramic Painting</button>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Third Section: Slideshow -->
-    <section>
-      <div class="sec3-wrapper">
+      </section>
+      <!-- Third Section: Slideshow -->
+      <section class="index-section3">
         <h2>Latest products</h2>
         <div class="slideshow manual-slide">
           <div class="sec3-slide">
@@ -142,34 +127,28 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Fourth Section -->
-    <section>
-      <div class="sec4-wrapper">
-        <div class="sec4-info-wrapper">
-          <h2>Sunscribe to Newsletter</h2>
-          <form action="" class="input-container">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="email-input"
-              placeholder="Email Address"
-            />
-            <button type="submit" class="subscribe-button">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-      <div class="footer-container footer-flex">
+      </section>
+      <!-- Fourth Section -->
+      <section class="index-section4">
+        <h2>Sunscribe to Newsletter</h2>
+        <form action="" class="input-container">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="email-input"
+            placeholder="Email Address"
+          />
+          <button type="submit" class="subscribe-button">Subscribe</button>
+        </form>
+      </section>
+      <!-- Footer -->
+      <footer>
         <div class="footer-help">
           <div class="footer-texts">
             <h2>Help</h2>
-            <p>Help Centre</p>
-            <p>Privacy settings</p>
+            <a href="contact.html">Help Centre</a>
+            <a href="index.html">Privacy settings</a>
           </div>
           <div class="footer-socials">
             <a href="https://www.youtube.com/" target="_blank">
@@ -183,29 +162,36 @@
             </a>
           </div>
         </div>
-        <div class="footer-logo">Earthly <span>Artisry</span></div>
-        <div class="footer-contact">
+        <a href="index.html" class="footer-logo"
+          >Earthly <span>Artisry</span></a
+        >
+        <nav class="footer-contact">
           <ul>
             <li>
-              <i class="fa-regular fa-envelope" style="color: #ffffff"></i>
-              Email :
-              <a class="footer-a" href="mailto:example@mail.com"
-                >example@mail.com</a
+              <a class="footer-a" href="mailto:example@mail.com">
+                <i class="fa-regular fa-envelope"></i>
+                example@mail.com</a
               >
             </li>
             <li>
-              <i class="fa-solid fa-phone-volume" style="color: #ffffff"></i>
-              Call Us :
-              <a class="footer-a" href="tel:+94771804020">+123 45 67 89</a>
+              <a class="footer-a" href="tel:+94771804020">
+                <i class="fa-solid fa-phone-volume"></i>
+                +123 45 67 89</a
+              >
             </li>
             <li>
-              <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
-              <a class="footer-a" href="#">Rustaveli Avenue, 30</a>
+              <a
+                class="footer-a"
+                href="https://www.google.com/maps/place/30+Shota+Rustaveli+Ave,+T'bilisi/ data=!4m2!3m1!1s0x40440cdd1af7ece7:0xa0647da208fff81e?sa=X& ved=2ahUKEwjM3qrR-FCDAXUIUaQEHV-VCH4Q8gF6BAgKEAA"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+                Rustaveli Avenue, 30</a
+              >
             </li>
           </ul>
-        </div>
-      </div>
-    </footer>
+        </nav>
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

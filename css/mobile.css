@@ -6,33 +6,32 @@
         font-size: 32px;
     }
     /* First Section  */
-    .sec1-info-wrapper {
-        gap: 32px;
-        width: 388px;
-    }
     .sec1-text {
         font-size: 32px;
+        line-height: 40px;
+        text-align: center;
     }
+
+    .index_section1 {
+        height: 304px;
+        row-gap: 32px;
+    }
+
     /* Second sections */
     .photo-wrapper {
         width: 100%;
     }
+
     .text-wrapper {
         width: 90%;
     }
+
     /* Third Section */
     /* Fourth Section */
-    .sec4-info-wrapper h2 {
-        font-size: 32px;
-    }
-    .email-input {
-        width: 90%;
-    }
-    .footer-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+  
+    /* footer */
+    footer {
+        padding-inline: 24px;
     }
     /* second page */
     .cover-info-wrapper h2 {
@@ -104,3 +103,27 @@
     }
   }
   
+  @media (max-width: 481px) {
+    .index_section3 {
+        padding: 64px 20px;
+    }
+
+    .index_section3 h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .index_section2 {
+        padding: 64px 48px;
+    }
+
+    .sec2-wrapper,
+    .box {
+        width: 100%;
+    }
+}
+
