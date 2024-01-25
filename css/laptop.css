@@ -30,16 +30,17 @@
 
   /* second page */
   .slide-section {
-      padding: 120px 24px;
-  }
+    padding-inline: 32px;
+}
+
   .each-photo {
       flex-wrap: wrap; 
   }
   /* third page */
-  .form-wrapper {
-      top: 160px;
-      left: 32px;
-  }
+  .contact-cover {
+    padding-left: 32px;
+}
+
   .contact-section {
       background: #EA904F;
       padding: 120px 116px;

@@ -62,9 +62,10 @@
     }
 
     /* Section 3 */
-    .index-section3{
-        padding-left: 24px;
+    .slide-section {
+        padding-inline: 24px;
     }
+
     /* Section 4 */
 
     .email-input {
@@ -89,10 +90,7 @@
         max-width: 48%;
     }
     /* third page */
-    .form-wrapper {
-        top: 160px;
-        left: 24px;
-    }
+   
     .map-and-icons ul {
         list-style: none;
         display: flex;
@@ -146,5 +144,33 @@
         text-align: center;
         row-gap: 32px;
     }
-    
+
+    /* artworks page */
+    .slide-section {
+        padding-block: 64px;
+    }
+
+    .texts-before-slide {
+        margin-bottom: 42px;
+    }
+
+    .texts-before-slide h2 {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .contact-cover {
+        padding-inline: 20px;
+        height: 560px;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .form-wrapper h2 {
+        font-size: 32px;
+    }
 }

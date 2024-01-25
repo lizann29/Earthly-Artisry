@@ -34,38 +34,16 @@
         padding-inline: 24px;
     }
     /* second page */
-    .cover-info-wrapper h2 {
-        font-family: 'Inter', sans-serif;
-        font-size: 32px;
-        font-weight: 700;
-        color: #ffffff;
-        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
-    }
-    .slide-section {
-        padding: 72px 24px;
-    }
-    .texts-before-slide h2 {
-        font-size: 16px;
-    }
+ 
     .each-photo {
         flex: 1 0 100%; 
         max-width: 100%;
     }
     /* third page */
-    .form-wrapper {
-        top: 160px;
-        left: 24px;
-        width: 80%;
+    .contact-cover {
+        padding-inline: 20px;
     }
-    .form-wrapper h2 {
-        font-size: 32px;
-    }
-    .form-wrapper input {
-        width: 80%;
-    }
-    .form-wrapper input[name="message"] {
-        width: 99%;
-    }
+
     .photos-here .each-photo:nth-last-child(-n + 4) {
         display: none; 
     }
@@ -104,6 +82,7 @@
   }
   
   @media (max-width: 481px) {
+
     .index_section3 {
         padding: 64px 20px;
     }
@@ -113,6 +92,12 @@
         line-height: 40px;
         margin-bottom: 32px;
     }
+
+    /* Artworks page */
+    .cover-wrapper {
+        height: 400px;
+    }
+
 }
 
 

@@ -26,13 +26,12 @@
   <body>
     <div class="container">
       <header>
-    
         <div class="burger-bar">
           <div class="burger-line"></div>
           <div class="burger-line"></div>
           <div class="burger-line"></div>
         </div>
-  
+
         <nav class="nav-bar">
           <ul class="nav-ul-items">
             <li>
@@ -41,50 +40,59 @@
               >
             </li>
             <li>
-              <a class="nav-a active" href="artworks.html">Artworks</a>
+              <a class="nav-a no-active" href="artworks.html">Artworks</a>
             </li>
-            <li><a class="nav-a no-active" href="contact.html">Contact</a></li>
+            <li><a class="nav-a active" href="contact.html">Contact</a></li>
           </ul>
         </nav>
-  
+
         <a href="index.html" class="logo">Earthly <span>Artistry</span></a>
-        
+
         <div class="sign-in-div">
           <p>Sign in</p>
           <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
         </div>
-      
-    </header>
-  
-      <section>
-        <div class="contact-cover">
-          <div class="form-wrapper">
-            <h2>Get In Touch</h2>
-            <form>
-              <div class="name-email">
-                <input type="text" name="username" placeholder="Full Name" />
-                <input type="email" name="email" placeholder="Email" />
-              </div>
-  
-              <input type="textarea" name="message" placeholder="Message" />
-            </form>
+      </header>
+
+      <section class="contact-cover">
+        <div class="form-wrapper">
+          <h2>Get In Touch</h2>
+          <form>
+            <div class="name-email">
+              <input type="text" name="username" placeholder="Full Name" />
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+
+            <textarea name="message" placeholder="Message"></textarea>
             <button type="submit" class="submit-button">SUBMIT</button>
-          </div>
+          </form>
         </div>
       </section>
-  
+
       <section>
         <div class="contact-section">
           <h2>Contact</h2>
           <div class="map-and-icons">
             <ul>
               <li>
-                <img src="images/frame1.svg" alt="" /> <span>Call Us</span>
+                <a href="contact.html">
+                  <img src="images/frame1.svg" alt="" /> <span>Call Us</span>
+                </a>
               </li>
-              <li><img src="images/frame2.svg" alt=""></i><span> Email Us</span></li>
-              <li><img src="images/frame3.svg" alt=""></i><span>Address</span></li>
+
+              <li>
+                <a href="contact.html">
+                  <img src="images/frame2.svg" alt="" /> <span>Email Us</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="contact.html">
+                  <img src="images/frame3.svg" alt="" /> <span>Address</span>
+                </a>
+              </li>
             </ul>
-  
+
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.0609470890968!2d44.79514897647686!3d41.6976199766942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440ce62af72a59%3A0x3d4c97b20114415f!2zMTAg4YOo4YOd4YOX4YOQIOGDoOGDo-GDoeGDl-GDkOGDleGDlOGDmuGDmOGDoSDhg5Lhg5Dhg5vhg5bhg5jhg6Dhg5gsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmA!5e0!3m2!1ska!2sge!4v1705677818582!5m2!1ska!2sge"
               width="600"
@@ -97,6 +105,7 @@
           </div>
         </div>
       </section>
+
       <!-- Footer -->
       <footer>
         <div class="footer-container footer-flex">
