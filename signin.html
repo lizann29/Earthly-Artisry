@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="registrationForm">
+          <label for="username"> Username:</label><br />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            autocomplete="current-password"
+          /><br />
+          <label for="firstName">First Name:</label><br />
+          <input type="text" id="firstName" name="firstName" required /><br />
+          <label for="lastName">Last Name:</label><br />
+          <input type="text" id="lastName" name="lastName" required /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+          <label for="address">Address:</label><br />
+          <input type="text" id="address" name="address" required /><br />
+          <label for="city">City:</label><br />
+          <input type="text" id="city" name="city" required /><br />
+          <label for="password">Passwords:</label><br />
+          <div class="password-field">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              autocomplete="current-password"
+            />
+            <span
+              id="togglePassword"
+              class="toggle-password"
+              onclick="togglePasswordVisibility()"
+              >&#128065;</span
+            >
+          </div>
+          <br /><br />
+          <input type="submit" value="Register" />
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="signIn.js"></script>
+  </body>
+</html>

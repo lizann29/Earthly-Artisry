@@ -72,7 +72,7 @@ header {
   align-items: center;
   column-gap: 16px;
 }
-.sign-in-div p {
+.sign-in-div a{
   color: #FFF;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -648,4 +648,169 @@ header {
 
 .map-and-icons li img {
   margin-right: 10px;
+}
+
+
+/* sign-in */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.password-field {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+/* sign-in */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.password-field {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* login form styles */
+.loginForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.loginForm input[type="submit"] {
+  background-color: #EA904F;
+  color: #fff;
+  cursor: pointer;
+}
+
+.loginForm input[type="submit"]:hover {
+  background-color: #892a15;
+}
+
+.loginForm .password-field {
+  position: relative;
+}
+
+.loginForm .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.loginForm a {
+  color: #d5906e;
+  text-decoration: none;
+}
+
+.loginForm a:hover {
+  text-decoration: underline;
+}
+
+.noAccount {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.noAccount h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.noAccount a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.noAccount a:hover {
+  text-decoration: underline;
 }
