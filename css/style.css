@@ -814,3 +814,73 @@ header {
 .noAccount a:hover {
   text-decoration: underline;
 }
+
+/* api section */
+
+.index-section5 {
+  height: 480px;
+  background-color: #281502;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 56px;
+}
+
+.index-section5 h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fadeIn 4s ease-in-out forwards; 
+}
+
+.blocks{
+  gap: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.btn-see-more{
+  width: 168px;
+  border: #281502 2px solid;
+  border-radius: 10px;
+  padding: 9px 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #281502;
+
+}
+
+.single-block {
+  border-radius: 0.5rem;
+  }
+.user {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 20px;
+font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight: 400;
+color: #ffffff;
+align-items: center;
+text-align: center;;
+}
+ .user img {
+  border-radius: 50%;
+ }
+ 
+ .review {
+  font-size: 15px;
+  font-weight: 700;
+}
