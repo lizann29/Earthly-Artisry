@@ -74,13 +74,18 @@
 
   <!-- slideshow section   -->
   <section class="slide-section">
-      <div class="texts-before-slide">
-        <h2>SHOP ALL / artworks</h2>
-        <button class="sort-button">
-          SORT <i class="fa-solid fa-sort"></i>
-        </button>
-      </div>
-
+    <div class="texts-before-slide">
+      <h2>SHOP ALL / artworks</h2>
+      <button class="sort-button">
+        SORT <i class="fa-solid fa-sort"></i>
+      
+      <ul class="sort-list" style="display: none;">
+        <li data-sort="low-to-high"><a href="#">Low to High</a></li>
+        <li data-sort="high-to-low"><a href="#">High to Low</a></li>
+      </ul>
+    </button>
+    </div>
+    
       <div class="photos-here">
         <div class="each-photo">
           <img src="images/slidephoto1.png" alt="Product 1" />
@@ -254,7 +259,7 @@
   </footer>
 
     </div>
-  
-    <script src="script.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/sort.js"></script>
   </body>
 </html>

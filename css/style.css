@@ -522,23 +522,41 @@ header {
     font-weight: 700;
     color: #fff;
   }
-  
-  .sort-button {
-    height: 45px;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    width: 160px;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #402101;
-    border: 2px solid #B53B1B;
-    background-color: #ffffff;
-    margin-left: auto; 
-  }
-  
 
+    
+.sort-button {
+  height: 45px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 160px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #402101;
+  border: 2px solid #B53B1B;
+  background-color: #ffffff;
+  margin-left: auto; 
+  cursor: pointer;
+  position: relative;
+}
+.sort-list {
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 0;
+  list-style: none;
+}
+
+.sort-list li {
+  padding: 5px;
+}
+
+.sort-list li:hover {
+  background-color: #f0f0f0;
+}
 
   /* Contact css */
   .contact-cover {
