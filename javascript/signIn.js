@@ -49,6 +49,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     return;
   }
 
+  // Create an object with user data
   let userData = {
     username,
     firstName,
@@ -59,10 +60,13 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     password,
   };
 
+  // Retrieve existing user data from local storage
   let existingUsers = JSON.parse(localStorage.getItem("users")) || [];
 
+  // Add the new user data to the array
   existingUsers.push(userData);
 
+  // Store the updated user data back in local storage
   localStorage.setItem("users", JSON.stringify(existingUsers));
 
   alert("Registration successful!");
